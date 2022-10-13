@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+div {
+    padding: 5px;
+}
+
+.fifty-percent {
+    border: 1px solid black;
+    background-color: red;
+    width: 50%;
+}
+
+.one-hundred-pixels {
+    border: 1px solid black;
+    background-color: red;
+    width: 100px;
+}
+
+.parent {
+    border: 1px solid black;
+    padding: 0;
+    width: 100%;
+}
