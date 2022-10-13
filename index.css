@@ -1,0 +1,71 @@
+body {
+    background-color: #222222;
+    color: white;
+    height: 10vh;
+    padding: 0 20px;
+}
+
+img {
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (min-width: 320px) {
+    h1 {
+        text-align: center;
+        font-size: 25px; 
+        text-decoration: underline;
+    }
+
+    p {
+        font-size: 14px;
+        padding: 0px 20px;
+        line-height: 22px;
+    }
+    
+    img {
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    h1 {
+        color: chartreuse;
+    }
+
+    img {
+        border: 2px solid white;
+    }
+}
+
+/*screens above 600px*/
+@media screen and (min-width: 600px) {
+    /* apply a new color to h1*/
+    h1 {
+        color: salmon;
+    }
+
+    /*make the border around mario circle*/
+    img {
+        border-radius: 50%;
+    }
+}
+
+/*screens below 700px */
+@media (max-width: 700px) {
+    /*Image to have a background-color of white and a dashed border of another color*/
+    img {
+        background-color: white;
+        border: 2px dashed red;
+    }
+}
+
+/*apply gradient to landscape viewports*/
+@media (orientation: landscape) {
+    body {
+        background-image: linear-gradient(-225deg, red 0%, orange 48%, yellow 100%)
+    }
+}
